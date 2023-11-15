@@ -67,6 +67,7 @@ final class ViewController: UIViewController {
 }
 
 // MARK: - Actions
+
 extension ViewController {
     @IBAction func back() {
         resultLabel?.text = sortAlg?.previousStep().map { "\($0)" }.joined(separator: " ") ?? ""

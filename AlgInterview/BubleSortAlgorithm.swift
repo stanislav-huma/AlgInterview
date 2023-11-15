@@ -17,6 +17,7 @@ final class BubleSortAlgorithm<T: Comparable>: AnySortAlgorithm {
     private var steps: [SortStep] = []
     
     // MARK: - Init
+    
     init(areInIncreasingOrder: Bool, initialData: [CompareType]) {
         self.areInIncreasingOrder = areInIncreasingOrder
         self.sortingState = initialData
@@ -66,15 +67,5 @@ private extension BubleSortAlgorithm {
     struct SortStep {
         let firstIndex: Int
         let secondIndex: Int
-    }
-}
-
-// MARK: - Private
-
-private extension BubleSortAlgorithm {
-    func swap(left: inout T, right: inout T) {
-        let temp = right
-        right = left
-        left = temp
     }
 }

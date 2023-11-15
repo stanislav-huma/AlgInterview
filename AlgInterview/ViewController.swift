@@ -35,13 +35,55 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    // MARK: Views
+    
+    @IBOutlet weak var textField: UITextField?
+    @IBOutlet weak var backButton: UIButton?
+    @IBOutlet weak var forwardButton: UIButton?
+    @IBOutlet weak var resultLabel: UILabel?
+    
+    // MARK: - Private
+    
+    private var elementsString = "" {
+        didSet {
+            resultLabel?.text = elementsString
+            
+            elementsArray = elementsString
+                .components(separatedBy: .whitespaces)
+                .compactMap { Int($0)
+            }
+        }
+    }
+    
+    private var elementsArray: [Int] = [] {
+        didSet {
+            sortAlg = BubleSortAlgorithm(areInIncreasingOrder: true, initialData: elementsArray)
+        }
     }
 
+    private var sortAlg: (any AnySortAlgorithm)?
+}
 
+// MARK: - Actions
+extension ViewController {
+    @IBAction func back() {
+        resultLabel?.text = sortAlg?.previousStep().map { "\($0)" }.joined(separator: " ") ?? ""
+    }
+    
+    @IBAction func forward() {
+        resultLabel?.text = sortAlg?.nextStep().map { "\($0)" }.joined(separator: " ") ?? ""
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        elementsString = textField.text ?? ""
+        
+        return true
+    }
 }
 

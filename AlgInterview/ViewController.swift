@@ -52,8 +52,7 @@ final class ViewController: UIViewController {
             
             elementsArray = elementsString
                 .components(separatedBy: .whitespaces)
-                .compactMap { Int($0)
-            }
+                .compactMap { Int($0) }
         }
     }
     

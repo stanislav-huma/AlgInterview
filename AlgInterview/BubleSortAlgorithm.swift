@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class BubleSortAlgorithm: AnySortAlgorithm {
-    typealias CompareType = Int
+final class BubleSortAlgorithm<T: Comparable>: AnySortAlgorithm {
+    typealias CompareType = T
     
     // MARK: - Private properties
     
@@ -27,6 +27,10 @@ final class BubleSortAlgorithm: AnySortAlgorithm {
 
 extension BubleSortAlgorithm {
     func nextStep() -> [CompareType] {
+        guard !sortingState.isEmpty else {
+            return sortingState
+        }
+        
         for i in 0..<(sortingState.count - 1) {
             for j in 0..<(sortingState.count - i - 1) {
                 if areInIncreasingOrder, sortingState[j + 1] < sortingState[j] {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F140BCB82B04F09300F7EE35 /* BubleSortAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140BCB72B04F09300F7EE35 /* BubleSortAlgorithm.swift */; };
+		F140BCBA2B04F14D00F7EE35 /* AnySortAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140BCB92B04F14C00F7EE35 /* AnySortAlgorithm.swift */; };
 		F1F053812B04DF08003BCC58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F053802B04DF08003BCC58 /* AppDelegate.swift */; };
 		F1F053832B04DF08003BCC58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F053822B04DF08003BCC58 /* SceneDelegate.swift */; };
 		F1F053852B04DF08003BCC58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F053842B04DF08003BCC58 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F140BCB72B04F09300F7EE35 /* BubleSortAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubleSortAlgorithm.swift; sourceTree = "<group>"; };
+		F140BCB92B04F14C00F7EE35 /* AnySortAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySortAlgorithm.swift; sourceTree = "<group>"; };
 		F1F0537D2B04DF08003BCC58 /* AlgInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F053802B04DF08003BCC58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F053822B04DF08003BCC58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				F1F053802B04DF08003BCC58 /* AppDelegate.swift */,
 				F1F053822B04DF08003BCC58 /* SceneDelegate.swift */,
 				F1F053842B04DF08003BCC58 /* ViewController.swift */,
+				F140BCB72B04F09300F7EE35 /* BubleSortAlgorithm.swift */,
+				F140BCB92B04F14C00F7EE35 /* AnySortAlgorithm.swift */,
 				F1F053862B04DF08003BCC58 /* Main.storyboard */,
 				F1F053892B04DF0A003BCC58 /* Assets.xcassets */,
 				F1F0538B2B04DF0A003BCC58 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F140BCB82B04F09300F7EE35 /* BubleSortAlgorithm.swift in Sources */,
+				F140BCBA2B04F14D00F7EE35 /* AnySortAlgorithm.swift in Sources */,
 				F1F053852B04DF08003BCC58 /* ViewController.swift in Sources */,
 				F1F053812B04DF08003BCC58 /* AppDelegate.swift in Sources */,
 				F1F053832B04DF08003BCC58 /* SceneDelegate.swift in Sources */,

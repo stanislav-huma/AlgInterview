@@ -72,7 +72,7 @@ private extension BubleSortAlgorithm {
 // MARK: - Private
 
 private extension BubleSortAlgorithm {
-    func swap<T: Comparable>(left: inout T, right: inout T) {
+    func swap(left: inout T, right: inout T) {
         let temp = right
         right = left
         left = temp
